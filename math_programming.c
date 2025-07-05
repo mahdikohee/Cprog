@@ -25,3 +25,19 @@ int main(void){
     }
     return 0 ;
 }
+
+//another simple example of power and round method fucntion 
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+    int base = 2;
+    int exponant = 3;
+
+    double result = pow((double)base, (double)exponant);
+    int rounded_result = (int)round(result);  // <-- safer casting using round()
+//Use round method to auto avoid .9999999999 .....0.99999 this types of diffirence hell 
+    printf("Result is %d\n", rounded_result);
+
+    return 0;
+}
