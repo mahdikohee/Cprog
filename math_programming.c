@@ -41,3 +41,19 @@ int main(void){
 
     return 0;
 }
+
+------//did you know that ?
+double num = 3.1415926535;
+
+printf("|%4f|\n", num);   // width min 4, precision default 6
+printf("|%.4f|\n", num);  // precision exactly 4
+
+------//a simple example of squire     
+#include<stdio.h>
+#include<math.h>
+int main(void){
+    int number = 44 ;
+    double  result = sqrt((double)number) ;
+    printf("Result is :%4f\n" , result) ;
+    return 0 ;
+}
