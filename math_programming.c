@@ -12,3 +12,16 @@ int main(void){
     return 0 ;
 }
  
+//A example on absolute value 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main(void){
+    double val[] = {-1.10101  , -0.322 , -0.323433 ,4.45343434 , -3.090} ;
+    int n = sizeof(val) / sizeof(val[0]) ;
+    for(int i = 0 ; i < n ; i++){
+        printf("The main value is %4f \n" , val[i]) ;
+        printf("The absolute value is :%4f \n" , fabs(val[i])) ;
+    }
+    return 0 ;
+}
